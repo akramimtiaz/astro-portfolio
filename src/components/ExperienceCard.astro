@@ -1,0 +1,16 @@
+---
+const { organisation, linkToOrganisation, positionHeld, workPeriod, description } = Astro.props;
+---
+
+<div>
+  <div>
+    <a href={linkToOrganisation} target="_blank" rel="noopener"
+      ><span>{organisation}<span></span></span></a
+    >
+  </div>
+  <div>
+    <div>{positionHeld}</div>
+    <div>{workPeriod}</div>
+  </div>
+  <div>{description}</div>
+</div>

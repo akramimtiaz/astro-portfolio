@@ -1,0 +1,11 @@
+---
+const { href, label } = Astro.props;
+---
+
+<a href={href} target="_blank" aria-label={label} style="margin:0">
+  <div class="card" style="padding:10px;line-height:0;margin:0">
+    <div class="w-[20px] h-[20px]">
+      <slot />
+    </div>
+  </div>
+</a>

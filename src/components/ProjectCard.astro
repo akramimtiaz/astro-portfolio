@@ -1,0 +1,22 @@
+---
+const { imageSrc, title, description, stack } = Astro.props;
+---
+
+<a href={imageSrc} style="margin:unset">
+  <div style="transition:ease .5s filter,ease .5s opacity">
+    <div>
+      <img src="/images/portfolio/baileys/1.webp" alt="background" />
+    </div>
+    <div>
+      <h2>{title}</h2>
+      <div>
+        <!-- logos -->
+        {stack.map((tech: any) => <div>{tech}</div>)}
+      </div>
+      <p>{description}</p>
+    </div>
+    <div>
+      <div>Learn more</div>
+    </div>
+  </div>
+</a>
