@@ -1,5 +1,5 @@
 ---
-const { imageSrc, title, description, stack } = Astro.props;
+const { imageSrc, title, description, stack = [] } = Astro.props;
 ---
 
 <a href={imageSrc} style="margin:unset">
